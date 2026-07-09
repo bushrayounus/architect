@@ -1,22 +1,15 @@
-const projects = {
+console.log("Website Loaded");
 
-project1:{
-title:"Modern Residence",
-type:"Residential",
-images:3
-},
+const projectCards = document.querySelectorAll(".project-card");
 
-project2:{
-title:"Office Interior",
-type:"Commercial",
-images:5
-},
+projectCards.forEach(card => {
 
-project3:{
-title:"Villa",
-type:"Residential",
-images:8
-}
+    card.addEventListener("click", () => {
 
-};
-console.log("Bushra Younus Website Loaded");
+        const project = card.dataset.project;
+
+        alert("You clicked " + project);
+
+    });
+
+});
