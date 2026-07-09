@@ -435,9 +435,9 @@ body{
 
     padding:120px 8%;
 
-    text-align:center;
-
     background:white;
+
+    text-align:center;
 
 }
 
@@ -451,21 +451,46 @@ body{
 
 }
 
-.contact p{
+.contact-text{
 
-    margin-bottom:40px;
+    max-width:650px;
+
+    margin:0 auto 50px;
 
     color:#666;
 
+    line-height:1.8;
+
 }
-footer{
 
-    padding:35px;
+.contact-info{
 
-    text-align:center;
+    display:flex;
 
-    background:#111;
+    flex-direction:column;
 
-    color:white;
+    gap:20px;
+
+}
+
+.contact-info p{
+
+    font-size:18px;
+
+}
+
+.contact-info a{
+
+    color:#222;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.contact-info a:hover{
+
+    color:#b94242;
 
 }
