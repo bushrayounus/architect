@@ -43,16 +43,9 @@ body{
 
 }
 
-.logo{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:34px;
-
-    font-weight:600;
-
-    letter-spacing:3px;
-
+.logo img{
+    height:60px;
+    width:auto;
 }
 
 .nav-links{
