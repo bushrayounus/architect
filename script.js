@@ -25,3 +25,40 @@ if (menuToggle && sidebar) {
     });
 
 }
+
+// ================= AUTO PROJECT GALLERY =================
+// Looks for 1.jpg, 2.jpg, 3.jpg... inside the project's folder
+// and stops the moment a number doesn't exist. No counts to set by hand.
+
+function loadProjectGallery() {
+
+    const galleryEl = document.querySelector(".project-gallery");
+    if (!galleryEl) return;
+
+    const project = galleryEl.dataset.project;
+    const base = galleryEl.dataset.base || "";
+    let n = 1;
+
+    function tryNext() {
+        const probe = new Image();
+
+        probe.onload = () => {
+            const img = document.createElement("img");
+            img.src = probe.src;
+            img.alt = project + " image " + n;
+            galleryEl.appendChild(img);
+            n++;
+            tryNext();
+        };
+
+        probe.onerror = () => {
+            // no more numbered images left, stop here
+        };
+
+        probe.src = `${base}${project}/${n}.jpg`;
+    }
+
+    tryNext();
+}
+
+loadProjectGallery();
