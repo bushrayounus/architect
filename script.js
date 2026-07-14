@@ -27,8 +27,9 @@ if (menuToggle && sidebar) {
 }
 
 // ================= AUTO PROJECT GALLERY =================
-// Looks for 1.jpg, 2.jpg, 3.jpg... inside the project's folder
-// and stops the moment a number doesn't exist. No counts to set by hand.
+// Checks for 1.jpg through 30.jpg inside the project's folder and
+// shows whichever ones actually exist, in order. Gaps or a missing
+// 1.jpg are fine, it just skips past them instead of giving up.
 
 function loadProjectGallery() {
 
@@ -37,28 +38,34 @@ function loadProjectGallery() {
 
     const project = galleryEl.dataset.project;
     const base = galleryEl.dataset.base || "";
+    const maxToCheck = 30;
     let n = 1;
 
-    function tryNext() {
+    function checkNext() {
+
+        if (n > maxToCheck) return;
+
         const probe = new Image();
+        const num = n;
 
         probe.onload = () => {
             const img = document.createElement("img");
             img.src = probe.src;
-            img.alt = project + " image " + n;
+            img.alt = project + " image " + num;
             galleryEl.appendChild(img);
             n++;
-            tryNext();
+            checkNext();
         };
 
         probe.onerror = () => {
-            // no more numbered images left, stop here
+            n++;
+            checkNext();
         };
 
-        probe.src = `${base}${project}/${n}.jpg`;
+        probe.src = `${base}${project}/${num}.jpg`;
     }
 
-    tryNext();
+    checkNext();
 }
 
 loadProjectGallery();
