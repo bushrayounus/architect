@@ -18,31 +18,55 @@
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ================= SIDEBAR ================= -->
 
-<header>
+<aside class="sidebar" id="sidebar">
 
-<nav class="navbar">
+    <div class="sidebar-top">
 
-    <a href="#" class="logo">
-        <img src="assets/logo/logo.png" alt="Bushra Younus Logo">
-    </a>
+        <a href="#" class="logo">
+            <img src="assets/logo/logo.png" alt="Bushra Younus Logo">
+        </a>
 
-    <ul class="nav-links">
+    </div>
 
-        <li><a href="#about">About</a></li>
+    <nav class="sidebar-nav">
 
-        <li><a href="#projects">Projects</a></li>
+        <ul>
+            <li><a href="#about" class="nav-link">Studio</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-        <li><a href="#services">Services</a></li>
+    </nav>
 
-        <li><a href="#contact">Contact</a></li>
+    <div class="sidebar-bottom">
 
-    </ul>
+        <p class="status-tag"><span class="dot"></span> Currently accepting inquiries</p>
 
-</nav>
+        <div class="sidebar-contact">
+            <a href="mailto:studioby.designs@gmail.com">studioby.designs@gmail.com</a>
+            <a href="tel:+923353478361">+92 335 3478361</a>
+        </div>
 
-</header>
+        <p class="sidebar-copy">Studio BY, Karachi</p>
+
+    </div>
+
+</aside>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<a href="#contact" class="inquire-btn">Inquire</a>
+
+<!-- ================= MAIN ================= -->
+
+<main class="main">
 
 <!-- ================= HERO ================= -->
 
@@ -53,23 +77,17 @@
     <div class="hero-content">
 
         <p class="hero-subtitle">
-
-            Architecture • Interiors • Bespoke Furniture
-
+            Architecture &middot; Interiors &middot; Bespoke Furniture
         </p>
 
         <h1>
-
             Designing timeless spaces with purpose.
-
         </h1>
 
         <p>
-
             Residential, commercial and hospitality projects
             crafted through thoughtful planning,
             refined aesthetics and practical functionality.
-
         </p>
 
         <div class="hero-buttons">
@@ -81,6 +99,25 @@
             <a href="#contact" class="btn btn-light">
                 Get In Touch
             </a>
+
+        </div>
+
+        <div class="hero-meta">
+
+            <div class="hero-meta-item">
+                <span class="label">Based In</span>
+                <span class="value">Karachi, Pakistan</span>
+            </div>
+
+            <div class="hero-meta-item">
+                <span class="label">Registration</span>
+                <span class="value">PCATP A-06644</span>
+            </div>
+
+            <div class="hero-meta-item">
+                <span class="label">Focus</span>
+                <span class="value">Residential / Commercial / Hospitality</span>
+            </div>
 
         </div>
 
@@ -111,16 +148,20 @@ Formed by years of major corporate leadership; delivering highly personalized ar
 </h2>
 
 <p>
-I am an architect driven by the belief that space should be purposeful, enduring, and meticulously crafted. My design philosophy is rooted in a deep understanding of contextual architecture, structural integrity, and the timeless interplay of materials, light, and form. </p>
+I am an architect driven by the belief that space should be purposeful, enduring, and meticulously crafted. My design philosophy is rooted in a deep understanding of contextual architecture, structural integrity, and the timeless interplay of materials, light, and form.
+</p>
 
 <p>
-Before establishing my independent practice, I spent years shaping major architectural landscapes as the Lead Architect at Habib Fida Ali Architects (HFA). Working directly alongside the principal leadership, I spearheaded some of the firm’s most complex and prestigious commissions—ranging from high-end private residences and corporate headquarters to high-rise developments and expansive educational campuses. </p>
+Before establishing my independent practice, I spent years shaping major architectural landscapes as the Lead Architect at Habib Fida Ali Architects (HFA). Working directly alongside the principal leadership, I spearheaded some of the firm's most complex and prestigious commissions, ranging from high end private residences and corporate headquarters to high rise developments and expansive educational campuses.
+</p>
 
 <p>
-Throughout my tenure at HFA, I didn't just design; I managed the critical lifecycle of architecture. My role involved leading dedicated design teams, translating complex client visions into buildable realities, coordinating intricate engineering systems, and overseeing strict on-site execution. This rigorous corporate and institutional foundation instilled in me an uncompromising standard for detail, execution, and project management. </p>
+Throughout my tenure at HFA, I didn't just design, I managed the critical lifecycle of architecture. My role involved leading dedicated design teams, translating complex client visions into buildable realities, coordinating intricate engineering systems, and overseeing strict on site execution. This rigorous corporate and institutional foundation instilled in me an uncompromising standard for detail, execution, and project management.
+</p>
 
 <p>
-Today, my independent practice carries forward that rich legacy of architectural excellence, reimagined through a highly personalized, agile approach. We bring the heavy-weight technical expertise required for large-scale institutional projects into a boutique studio setting. Whether designing an intimate residential retreat or a commercial landmark, our commitment remains the same: creating spaces that are contextually relevant, structurally honest, and beautifully executed. </p>
+Today, my independent practice carries forward that rich legacy of architectural excellence, reimagined through a highly personalized, agile approach. We bring the heavy weight technical expertise required for large scale institutional projects into a boutique studio setting. Whether designing an intimate residential retreat or a commercial landmark, our commitment remains the same, creating spaces that are contextually relevant, structurally honest, and beautifully executed.
+</p>
 
 <div class="about-details">
 
@@ -129,9 +170,9 @@ Today, my independent practice carries forward that rich legacy of architectural
         <h3>Education</h3>
 
         <p>
-            <strong> NED University of Engineering & Technology </strong>
+            <strong>NED University of Engineering & Technology</strong>
             <br> Bachelor of Architecture (B.Arch) <br>
-            Karachi, Pakistan • 2017
+            Karachi, Pakistan &middot; 2017
         </p>
 
     </div>
@@ -148,7 +189,7 @@ Today, my independent practice carries forward that rich legacy of architectural
     </div>
 
 </div>
-    
+
 <a href="#contact" class="btn btn-outline">
 
 Let's Talk
@@ -187,13 +228,16 @@ Selected Projects
 
 <div class="project-card" data-project="project1">
 
-<img src="assets/projects/project1/cover.jpg" alt="Project 1">
+<div class="project-image">
+<img src="assets/projects/project1/cover.jpg" alt="Coastal Retreat Architecture">
+<span class="view-tag">View Project</span>
+</div>
 
 <div class="project-info">
 
-<h3> Coastal Retreat- Architecture Hawksbay Beach, Karachi</h3>
+<h3>Coastal Retreat &mdash; Architecture</h3>
 
-<p> Completed | 16,500 sft</p>
+<p class="project-meta"><span>Hawksbay Beach, Karachi</span><span>Completed</span><span>16,500 sft</span></p>
 
 </div>
 
@@ -201,13 +245,16 @@ Selected Projects
 
 <div class="project-card" data-project="project2">
 
-<img src="assets/projects/project2/cover.jpg" alt="Project 2">
+<div class="project-image">
+<img src="assets/projects/project2/cover.jpg" alt="Luxury Suite">
+<span class="view-tag">View Project</span>
+</div>
 
 <div class="project-info">
 
-<h3>Luxury Suite Sind Club. Karachi </h3>
+<h3>Luxury Suite &mdash; Sind Club</h3>
 
-<p>2025-Proposal | 500 sft </p>
+<p class="project-meta"><span>Karachi</span><span>2025 Proposal</span><span>500 sft</span></p>
 
 </div>
 
@@ -215,14 +262,16 @@ Selected Projects
 
 <div class="project-card" data-project="project3">
 
-
-<img src="assets/projects/project3/cover.jpg" alt="Project 3">
+<div class="project-image">
+<img src="assets/projects/project3/cover.jpg" alt="Coastal Retreat Interior">
+<span class="view-tag">View Project</span>
+</div>
 
 <div class="project-info">
 
-<h3>Coastal Retreat- Interior Hawksbay Beach, Karachi</h3>
+<h3>Coastal Retreat &mdash; Interior</h3>
 
-<p>Interior</p>
+<p class="project-meta"><span>Hawksbay Beach, Karachi</span><span>Interior</span></p>
 
 </div>
 
@@ -230,14 +279,16 @@ Selected Projects
 
 <div class="project-card" data-project="project4">
 
-
-<img src="assets/projects/project4/cover.jpg" alt="Project 4">
+<div class="project-image">
+<img src="assets/projects/project4/cover.jpg" alt="Signature Tower">
+<span class="view-tag">View Project</span>
+</div>
 
 <div class="project-info">
 
-<h3>Signature Tower Naya Nazimabad, Karachi </h3>
+<h3>Signature Tower</h3>
 
-<p>2021- Under Construction | 190,000 sft </p>
+<p class="project-meta"><span>Naya Nazimabad, Karachi</span><span>Under Construction</span><span>190,000 sft</span></p>
 
 </div>
 
@@ -245,14 +296,16 @@ Selected Projects
 
 <div class="project-card" data-project="project5">
 
-
-<img src="assets/projects/project5/cover.jpg" alt="Project 5">
+<div class="project-image">
+<img src="assets/projects/project5/cover.jpg" alt="Restaurant">
+<span class="view-tag">View Project</span>
+</div>
 
 <div class="project-info">
 
-<h3>Resturant DHA Phase VIII, Karachi </h3>
+<h3>Restaurant</h3>
 
-<p>2025- Under Construction | 2000 sft</p>
+<p class="project-meta"><span>DHA Phase VIII, Karachi</span><span>Under Construction</span><span>2,000 sft</span></p>
 
 </div>
 
@@ -260,79 +313,20 @@ Selected Projects
 
 <div class="project-card" data-project="project6">
 
-
-<img src="assets/projects/project6/cover.jpg" alt="Project 6">
+<div class="project-image">
+<img src="assets/projects/project6/cover.jpg" alt="Corporate Interior">
+<span class="view-tag">View Project</span>
+</div>
 
 <div class="project-info">
 
-<h3>Corporate </h3>
+<h3>Corporate</h3>
 
-<p>Interior</p>
-
-</div>
-
-</div>
-    
- <!-- <div class="project-card" data-project="project7">
-
-
-<img src="assets/projects/project6/cover.jpg" alt="Project 7">
-
-<div class="project-info">
-
-<h3>Project Six</h3>
-
-<p>Interior</p>
+<p class="project-meta"><span>Interior</span></p>
 
 </div>
 
 </div>
-
- <div class="project-card" data-project="project8">
-
-
-<img src="assets/projects/project6/cover.jpg" alt="Project 8">
-
-<div class="project-info">
-
-<h3>Project Six</h3>
-
-<p>Interior</p>
-
-</div>
-
-</div>
-    
-     <div class="project-card" data-project="project9">
-
-
-<img src="assets/projects/project6/cover.jpg" alt="Project 9">
-
-<div class="project-info">
-
-<h3>Project Six</h3>
-
-<p>Interior</p>
-
-</div>
-
-</div>
-    
-     <div class="project-card" data-project="project10">
-
-
-<img src="assets/projects/project6/cover.jpg" alt="Project 10">
-
-<div class="project-info">
-
-<h3>Project Six</h3>
-
-<p>Interior</p>
-
-</div>
-
-</div> -->
-    
 
 </div>
 
@@ -408,7 +402,7 @@ Bespoke Furniture
 
 <p>
 
-Custom-designed furniture crafted specifically
+Custom designed furniture crafted specifically
 for each project's unique requirements.
 
 </p>
@@ -475,18 +469,23 @@ studioby.designs@gmail.com
 
 <footer>
 
-<div class="container">
+<div class="container footer-inner">
 
 <p>
 
-© 2026 Bushra Younus · Architecture · Interiors · Bespoke Furniture
+© 2026 Bushra Younus &middot; Architecture &middot; Interiors &middot; Bespoke Furniture
 
 </p>
+
+<a href="https://www.instagram.com/studioby_bushrayounus/" target="_blank" class="footer-social">Instagram</a>
 
 </div>
 
 </footer>
-    <!-- ================= GALLERY ================= -->
+
+</main>
+
+<!-- ================= GALLERY ================= -->
 
 <div id="gallery" class="gallery">
 
